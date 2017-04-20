@@ -1,0 +1,49 @@
+{
+  "name": "typescript-playground",
+  "version": "1.0.0",
+  "description": "typescript playground",
+  "main": "index.js",
+  "scripts": {
+    "compile": "tsc",
+    "test": "mocha -w",
+    "coverage": "nyc mocha"
+  },
+  "author": "Patricio Ferreira <3dimentionar@gmail.com>",
+  "license": "UNLICENSED",
+  "nyc": {
+    "extension": [
+      ".ts",
+      ".tsx"
+    ],
+    "include": [
+        "src/**/*.ts",
+        "src/**/*.tsx"
+    ],
+    "exclude": [
+      "**/*.d.ts"
+    ],
+    "reporter": [
+        "lcov",
+        "html",
+        "text"
+    ],
+    "require": [
+      "ts-node/register"
+    ],
+    "sourceMap": true,
+    "instrument": true
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/chai": "^3.5.1",
+    "@types/mocha": "^2.2.41",
+    "@types/sinon": "^2.1.2",
+    "chai": "^3.5.0",
+    "mocha": "3.2.0",
+    "nyc": "^10.2.0",
+    "sinon": "^2.1.0",
+    "source-map-support": "^0.4.14",
+    "ts-node": "^3.0.2",
+    "typescript": "2.2.2"
+  }
+}

@@ -1,0 +1,7 @@
+*.pid
+*.log
+
+# Project Specifics
+.nyc_output
+coverage
+node_modules
