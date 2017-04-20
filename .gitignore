@@ -1,7 +1,12 @@
-*.pid
+logs
 *.log
+npm-debug.log*
 
-# Project Specifics
-.nyc_output
+pids
+*.pid
+*.seed
+
 coverage
+.nyc_output
 node_modules
+.npm
